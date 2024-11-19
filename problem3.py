@@ -30,3 +30,35 @@ Enter an integer=>4
 Enter an integer=>2
 2,4,5 do not form a Pythagorean triple
 """
+x = input ('Enter a number:')
+y = input ('Enter a number:')
+z = input ('Enter a number:')
+x = int(x)
+y = int(y)
+z = int(z)
+
+if z>y>x and x**2+y**2==z**2:
+    print (f'{x},{y},{z} form a Pythagorean Triple')
+if z>x>y and x**2+y**2==z**2:
+    print (f'{y},{x},{z} form a Pythagorean Triple')
+if x>y>z and z**2+y**2==x**2:
+    print (f'{z},{y},{x} form a Pythagorean Triple')
+if x>z>y and z**2+y**2==x**2:
+    print (f'{y},{z},{x} form a Pythagorean Triple')
+if y>x>z and x**2+z**2==y**2:
+    print (f'{z},{x},{y} form a Pythagorean Triple')
+if y>z>x and x**2+z**2==y**2:
+    print (f'{x},{z},{y} form a Pythagorean Triple')
+
+if z>y>x and x**2+y**2!=z**2:
+    print(f'{x},{y},{z} do not form Pythagorean triple')
+if z>x>y and x**2+y**2!=z**2:
+    print (f'{y},{x},{z} do not form a Pythagorean Triple')
+if x>y>z and z**2+y**2!=x**2:
+    print (f'{z},{y},{x} do not form a Pythagorean Triple')
+if x>z>y and z**2+y**2!=x**2:
+    print (f'{y},{z},{x} do not form a Pythagorean Triple')
+if y>x>z and x**2+z**2!=y**2:
+    print (f'{z},{x},{y} do not form a Pythagorean Triple')
+if y>z>x and x**2+z**2!=y**2:
+    print (f'{x},{z},{y} do not form a Pythagorean Triple')

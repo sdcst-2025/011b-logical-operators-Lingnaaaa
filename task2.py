@@ -31,3 +31,14 @@ Enter a number: 8
 Enter a number: 64
 64 is both a perfect square and divisible by 2.
 """
+
+x = input('Enter a number:')
+x=float(x)
+sqrtx = x**0.5
+print(x,sqrtx)
+if x%2==0 and sqrtx%1==0:
+    print('xx is both a perfect square and a divisible by 2.')
+elif x%2==0 and sqrtx%1!=0:
+    print('xx is only divisible by 2.')
+elif x%2!=0 and sqrtx%1==0:
+    print('xx is only a perfect square.')
